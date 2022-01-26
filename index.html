@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Level 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <form required>
+            <section id="coluna1">
+                <label>Nome completo:
+                    <input type="text" required>
+                </label>
+                <label>E-mail:
+                    <input type="email" required>
+                </label>
+                <label>CEP:
+                    <input type="text" pattern="\d*" id="cep" minlength="8" maxlength="8" required>
+                </label>
+                <label>Rua:
+                    <input type="text" required>
+                </label>
+                <label>Bairro:
+                    <input type="text" required>
+                </label>
+                <label>Cidade:
+                    <input type="text" required>
+                </label>
+            </section>
+
+            <section id="coluna2">
+                <label>Telefone:
+                    <input type="text" required pattern="\d*" id="fone" minlength="10" maxlength="11">
+                </label>
+                <label>Estado Civil:
+                    <select required>
+                        <option value="" disabled selected hidden>Selecione</option>
+                        <option value="Solteiro">Solteiro</option>
+                        <option value="Casado">Casado</option>
+                    </select>
+
+                </label>
+                <label>Escolaridade:
+                    <select required>
+                        <option value="" disabled selected hidden>Selecione</option>
+                        <option value="Ensino Fundamental">Ensino Fundamental</option>
+                        <option value="Ensino Medio">Ensino Medio</option>
+                        <option value="Ensino Superior">Ensino Superior</option>
+                    </select>
+                </label>
+                <label>Número:
+                    <input type='number' required id="num">
+                </label>
+                <div id="checkbox">
+                    <label>Tem complemento?
+                        <input type="checkbox" id=checkComplemento>
+                    </label>
+                </div>
+                <div id="complemento">
+                    <label id="compLabel">Complemento:
+                        <input type="text" id="compInput">
+                    </label>
+                </div>
+                <label>Estado:
+                    <select required>
+                        <option value="" disabled selected hidden>Selecione</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+
+                </label>
+            </section>
+
+            <button id="enviar">Enviar Dados</button>
+            <button type="reset" id="reset"></button>
+
+        </form>
+        <div id="contadorDiv">
+            <p>Quantidade de usuários cadastrados: 0</p>
+        </div>
+
+        <section id="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>Estado Civil</th>
+                        <th>Escolaridade</th>
+                        <th>CEP</th>
+                        <th>Rua</th>
+                        <th>Número</th>
+                        <th>Complemento</th>
+                        <th>Bairro</th>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                        <th>Data Cadastro</th>
+                        <th>teste</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
